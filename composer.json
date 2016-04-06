@@ -1,0 +1,26 @@
+{
+  "name": "maxikg/github-api-bundle",
+  "description": "A bridge for using knplabs/github-api in Symfony 2/3.",
+  "minimum-stability": "stable",
+  "keywords": ["github", "api client", "symfony 3"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Max Walsch",
+      "email": "max.walsch@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "symfony/http-kernel": "~3.0",
+    "symfony/dependency-injection": "~3.0",
+    "symfony/config": "~3.0",
+    "knplabs/github-api": "1.6.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Maxikg\\GithubApiBundle": ""
+    }
+  },
+  "target-dir": "Maxikg/GithubApiBundle"
+}

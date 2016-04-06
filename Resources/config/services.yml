@@ -1,0 +1,9 @@
+services:
+    github.http.client:
+        class: Github\HttpClient\HttpClient
+    github.http.cache:
+        class: Github\HttpClient\Cache\FilesystemCache
+        arguments: ['%kernel.cache_dir%/github']
+    github.client:
+        class: Github\Client
+        arguments: ['@github.http.client']
