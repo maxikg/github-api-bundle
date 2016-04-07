@@ -1,4 +1,4 @@
-# GithubApiBundle
+# GithubApiBundle [![Build Status](https://travis-ci.org/maxikg/github-api-bundle.svg?branch=master)](https://travis-ci.org/maxikg/github-api-bundle)
 
 A simple bridge between
 [KnpLabs/php-github-api](https://github.com/KnpLabs/php-github-api) and
