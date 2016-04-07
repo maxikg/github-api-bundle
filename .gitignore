@@ -1,4 +1,5 @@
 .idea
+Tests/Functional/var
 vendor
 composer.lock
 composer.phar
