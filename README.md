@@ -2,7 +2,7 @@
 
 A simple bridge between
 [KnpLabs/php-github-api](https://github.com/KnpLabs/php-github-api) and
-Symfony 3.
+Symfony 2/3.
 
 ## Installation
 
@@ -112,7 +112,7 @@ https://github.com/KnpLabs/php-github-api/tree/1.6.0/doc
      [doctrine/DoctrineCacheBundle](https://github.com/doctrine/DoctrineCacheBundle))
  * Multi client configuration
  * A better documentation in the `Resources/docs` folder
- * Compatibility checks against Symfony 2
+ * Compatibility checks against Symfony <2.8
 
 ## License
 
