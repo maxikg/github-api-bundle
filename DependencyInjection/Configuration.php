@@ -47,12 +47,12 @@ class Configuration implements ConfigurationInterface
 
     private static function getValidAuthMethods()
     {
-        return [
+        return array(
             Client::AUTH_HTTP_PASSWORD,
             Client::AUTH_HTTP_TOKEN,
             Client::AUTH_URL_CLIENT_ID,
             Client::AUTH_URL_TOKEN,
             self::AUTHENTICATION_DISABLED
-        ];
+        );
     }
 }

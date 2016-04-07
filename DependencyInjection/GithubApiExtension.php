@@ -27,13 +27,13 @@ class GithubApiExtension extends Extension
         // Configure cache
         if (true === $config['cache']['enabled']) {
             $clientDefinition->setClass(self::CACHED_CLIENT_CLASS);
-            $clientDefinition->addMethodCall('setCache', [new Reference($config['cache']['service'])]);
+            $clientDefinition->addMethodCall('setCache', array(new Reference($config['cache']['service'])));
         }
 
         // Configure client options
         if (isset($config['client'])) {
             foreach ($config['client'] as $key => $value) {
-                $clientDefinition->addMethodCall('setOption', [$key, $value]);
+                $clientDefinition->addMethodCall('setOption', array($key, $value));
             }
         }
 
@@ -62,7 +62,7 @@ class GithubApiExtension extends Extension
                     $password = $config['password'];
             }
 
-            $clientDefinition->addMethodCall('authenticate', [$tokenOrLogin, $password, $type]);
+            $clientDefinition->addMethodCall('authenticate', array($tokenOrLogin, $password, $type));
         }
     }
 }

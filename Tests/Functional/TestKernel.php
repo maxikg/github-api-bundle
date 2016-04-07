@@ -15,9 +15,9 @@ class TestKernel extends Kernel
 
     public function registerBundles()
     {
-        return [
+        return array(
             new GithubApiBundle()
-        ];
+        );
     }
 
     public function registerContainerConfiguration(LoaderInterface $loader)
