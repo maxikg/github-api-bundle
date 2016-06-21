@@ -51,15 +51,15 @@ class GithubApiExtension extends Extension
             switch ($type) {
                 case Client::AUTH_HTTP_TOKEN:
                 case Client::AUTH_URL_TOKEN:
-                    $tokenOrLogin = $config['token'];
+                    $tokenOrLogin = $config['authentication']['token'];
                     break;
                 case Client::AUTH_URL_CLIENT_ID:
-                    $tokenOrLogin = $config['client_id'];
-                    $password = $config['client_secret'];
+                    $tokenOrLogin = $config['authentication']['client_id'];
+                    $password = $config['authentication']['client_secret'];
                     break;
                 case Client::AUTH_HTTP_PASSWORD:
-                    $tokenOrLogin = $config['username'];
-                    $password = $config['password'];
+                    $tokenOrLogin = $config['authentication']['username'];
+                    $password = $config['authentication']['password'];
             }
 
             $clientDefinition->addMethodCall('authenticate', array($tokenOrLogin, $password, $type));
